@@ -5,5 +5,3 @@ googletrans
 numpy
 tflearn
 tensorflow
-json
-pickle
