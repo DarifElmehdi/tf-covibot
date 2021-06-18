@@ -1,0 +1,10 @@
+Flask
+flask_cors
+nltk
+googletrans
+numpy
+tflearn
+tensorflow
+random
+json
+pickle
