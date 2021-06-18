@@ -5,6 +5,5 @@ googletrans
 numpy
 tflearn
 tensorflow
-random
 json
 pickle
