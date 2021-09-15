@@ -1,49 +1,108 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
-         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
-         "context_set": ""
+                "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+                "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+                "context_set": ""
         },
         {"tag": "goodbye",
-         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
-         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
-         "context_set": ""
+                "patterns": ["ciao", "See you later", "Goodbye", "I am Leaving","bye", "Have a Good day"],
+                "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+                "context_set": ""
+        },
+        {"tag": "thank",
+                "patterns": ["Thanks","Thank you","Thank you so much","Thanks bot","Thanks for that","cheers"],
+                "responses": ["You’re welcome.","No problem.","No worries.","Don’t mention it.","My pleasure.","Anytime.","It was the least I could do.","Glad to help.","Sure!","Thank you."],
+                "context_set": ""
         },
         {"tag": "name",
-         "patterns": ["what is your name", "what should I call you", "whats your name?"],
-         "responses": ["You can call me CoviBOT.", "I'm CoviBOT!", "I'm CoviBOT your assistant."],
-         "context_set": ""
+                "patterns": ["what is your name", "what should I call you", "whats your name?"],
+                "responses": ["You can call me CoviBOT.", "I'm CoviBOT!", "I'm CoviBOT your assistant."],
+                "context_set": ""
         },
         {"tag": "coronavirus",
-                "patterns": ["what is coronavirus","tell me about coronavirus","what's covid-19","give me some informations about covid-19?","I need to know corona-virus","what's covid means?"],
-                "responses": ["Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.","Coronaviruses are a type of virus.","Coronavirus disease 2019 (COVID-19) is defined as illness caused by a novel coronavirus now called severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)"],
+                "patterns": ["what is Corona virus?","define Corona virus","what is COVID-19?","define COVID-19"],
+                "responses": ["Coronavirus (COVID-19) is a new coronavirus that has not been previously identified. 'CO' stands for 'corona' 'VI' for 'virus' and 'D' for disease.","Coronavirus disease (COVID19) is an infectious disease caused by a newly discovered coronavirus.","Coronaviruses are a type of virus.","Coronavirus disease 2019 (COVID19) is defined as illness caused by a novel coronavirus now called severe acute respiratory syndrome coronavirus 2 (SARSCoV2)"],
+                "context_set": ""
+        },
+        {"tag": "spread",
+                "patterns": ["how does it spread?","how does it move?","how do people get infected?","how is the virus spread?"],
+                "responses": [" Coronavirus spreads between people who are in close contact with one another and through respiratory droplets produced when an infected person coughs or sneezes."],
+                "context_set": ""
+        },
+        {"tag": "spread_no_sick",
+                "patterns": ["can someone spread the virus without being sick?","do people carry the virus without symptoms?"],
+                "responses": ["Some spread might be possible before people show symptoms; there have been reports of this occurring with this new coronavirus, but this is not thought to be the main way the virus spreads"],
+                "context_set": ""
+        },
+        {"tag": "spread_objects",
+                "patterns": ["can the Corona virus spread from contact with contaminated surfaces or objects?","does the virus survive on objects?","does the virus survive on surfaces?","Can you get infected with the Corona through products or touching surfaces?","Can you get the virus touching objects or surfaces?","Do I need to clean the shopping?","Can you get infected with the Corona by mail (letters, parcels)?"],
+                "responses": ["It may be possible that a person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes, but this is not thought to be the main way the virus spreads"],
+                "context_set": ""
+        },
+        {"tag": "spread_after_quarantine",
+                "patterns": ["can someone who has been quarantined for COVID-19 spread the illness to others?","is someone after quarantined still contagious?","If I get COVID-19, will I then be immune, or could I get re-infected?"],
+                "responses": ["Someone who has been released from isolation is not considered to pose a risk of infection to others"],
                 "context_set": ""
         },
         {"tag": "symptoms",
-                "patterns": ["what are the symptoms","does corona have any symptoms","what are the most common symptoms","What are the common symptoms of COVID-19?"],
-                "responses": ["Most common symptoms:fever ,dry cough and  tiredness","Less common symptoms: aches and pains ,sore throat and diarrhoea "," Less common symptoms: conjunctivitis, headache and  loss of taste or smell","Less common symptoms:a rash on skin or discolouration of fingers or toes","Serious symptoms: difficulty breathing or shortness of breath,chest pain or pressure or loss of speech or movement."],
+                "patterns": ["What symptoms should I be on the lookout for?","Which are the symptoms?","Is it dangerous?","Can it be lethal?","How bad is the virus?","Can I die from the virus?","Can you die from the virus?"],
+                "responses": ["COVID-19 can present with symptoms between two and 14 days following exposure. Symptoms can be similar to a cold or flu with fever, cough and shortness of breath, and can range from a mild cough to severe pneumonia."],
                 "context_set": ""
         },
-        {"tag": "prevention",
-                "patterns": ["How to prevent coronavirus transmission","how to stop coronavirus spreading ?","how to slow down coronavirus transmission?","How to prevent Covid-19 transmission","how to stop COVID-19 spreading ?","how to slow down COVID-19 transmission?","how to stand against coronavirus/COVID-19"],
-                "responses": ["Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.","Maintain at least 1 metre distance between you and people coughing or sneezing.","Avoid touching your face.","Cover your mouth and nose when coughing or sneezing.","Stay home if you feel unwell.","Refrain from smoking and other activities that weaken the lungs.","Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people."],
+        {"tag": "what_to_do",
+                "patterns": ["What should I do if I have these symptoms?","Seek help when symptoms are present","What are cold-like symptoms?"],
+                "responses": ["DO NOT GO to the hospital! The first step is to contact your primary care physician. They can recommend proper treatment and, if necessary, notify public health officials."],
                 "context_set": ""
         },
-        {"tag": "todo",
-                "patterns": ["What should I do if I have symptoms of COVID-19?","what I must do if identifies any symptoms","quick action if I have any symtoms","what first action to do in case of illness","what should I do if I got COVID-19/coronavirus"],
-                "responses": ["Seek immediate medical attention if you have serious symptoms.","Always call before visiting your doctor or health facility.","People with mild symptoms who are otherwise healthy should manage their symptoms at home.","On average it takes 5–6 days from when someone is infected with the virus for symptoms to show","however it can take up to 14 days for symptoms to show."],
+        {"tag": "risk",
+                "patterns": ["Who is at most risk for contracting a severe case of Corona virus?","Which categories of people are more at risk?","who is most at danger?"],
+                "responses": [" Anyone can contract COVID-19, but to date, severe cases have mostly been limited to the elderly and those with existing chronic health conditions, such as heart disease, cancer, diabetes and respiratory disease."],
+                "context_set": ""
+        },
+        {"tag": "poultry",
+                "patterns": ["Can poultry carry and transmit coronavirus?","Can chicken carry and transmit coronavirus?"],
+                "responses": ["There is no indication that farm animals can become infected with coronavirus (SARS-CoV-2) or that they can transmit the virus to humans"],
+                "context_set": ""
+        },
+        {"tag": "children",
+                "patterns": [" Can my children still play outside with others?","Can kids play outside?","Are chidren at risk when they play?"],
+                "responses": ["Children seem to be contributing little to the spread of COVID-19. They can play with others if they do not have any symptoms. Large groups should be avoided."],
+                "context_set": ""
+        },
+        {"tag": "medications",
+                "patterns": ["Do paracetamol, ibuprofen or other medications help against the novel coronavirus?","Which medications should I take?"," Which medicine should I take?","what are covid-19 vaccine?","is there any vaccine for corona virus covid 19?"],
+                "responses": ["Currently, three vaccines are authorized and recommended in the United States to prevent COVID-19: Pfizer BioNTech , Moderna and Johnson & Johnson's Janssen","Paracetamol and ibuprofen do not help to cure the virus but can reduce symptoms of fever, sore throat and malaise."],
                 "context_set": ""
         },
         {"tag": "masks",
-                "patterns": ["How well do face masks protect against coronavirus?","How do the different types of masks work?","How to get the most from your mask","What about face shields?","Do you still need to wear a facemask after you’re fully vaccinated?","what are the types of face masks?"],
-                "responses": ["Medical masks Also called surgical masks, these are loosefitting disposable masks. They're meant to protect the wearer from contact with droplets and sprays that may contain germs. ","A medical mask also filters out large particles in the air when the wearer breathes in."," To make medical masks more form-fitting, knot the ear loops where they attach to the mask. Then fold and tuck the unneeded material under the edges.","An N95 mask is a type of respirator. It offers more protection than a medical mask does because it filters out both large and small particles when the wearer inhales.","Because N95 masks have been in short supply, the CDC has said they should be reserved for health care providers.","Some N95 masks, and even some cloth masks, have valves that make them easier to breathe through. Unfortunately, these masks don't filter the air the wearer breathes out. For this reason, they've been banned in some places.","The CDC doesn't recommend using face shields instead of masks because it's unclear how much protection shields provide.","wearing a face mask may not be possible in every situation. If you must use a face shield instead of a mask","Masks that have a bendable nose strip help prevent air from leaking out of the top of the mask.","The effectiveness of cloth and medical masks can be improved by ensuring that the masks are well fitted to the contours of your face to prevent leakage of air around the masks' edges."],
+                "patterns": ["Does it make sense to wear face masks to protect yourself?","Is it important to have a face mask?","Does the mask protect from the Corona virus?","Shall I use a face mask when I go out?"],
+                "responses": ["Face masks are recommend medical personnel only. Why? You should use special masks that close very well over your nose and mouth, use them precisely and change them regularly. This is almost impossible in daily use."],
                 "context_set": ""
         },
-        {"tag": "usemask",
-                "patterns": ["how to use mask ?","whats the propper why to put a mask?","what precaution to take while putting a mask ?","is mask enaught to stay safer?","advices about masks","precautions about masks"],
-                "responses": ["Wash or sanitize your hands before and after putting on your mask.","Place your mask over your mouth and nose and chin.","Tie it behind your head or use ear loops. Make sure it's snug.","Don't touch your mask while wearing it.","If you accidentally touch your mask, wash or sanitize your hands.","If your mask becomes wet or dirty, switch to a clean one. Put the used mask in a sealable bag until you can get rid of it or wash it."," Remove the mask by untying it or lifting off the ear loops without touching the front of the mask or your face.","Wash your hands immediately after removing your mask.","Regularly wash cloth masks in the washing machine or by hand. (They can be washed along with other laundry.)","Don't put masks on anyone who has trouble breathing or is unconscious or otherwise unable to remove the mask without help.","Don't put masks on children under 2 years of age.","Don't use face masks as a substitute for physical distancing."],
+        {"tag": "incubation",
+                "patterns": ["Could the incubation period be much longer than 14 days?","How long is the incubation of the virus?"],
+                "responses": ["It varies from 2 to 12 days: for safety reasons should be considered  14 days"],
+                "context_set": ""
+        },
+        {"tag": "prevention",
+                "patterns": ["How can I protect myself?","How can I protect myself?","What can I do to prevent infection?","What do I do to prevent infection?","What should I do to limit the risk of infection?"],
+                "responses": ["The key to handwashing is to wash, with soap, often and wash well for at least 20 seconds."],
+                "context_set": ""
+        },
+        {"tag": "dryers",
+                "patterns": ["Do hand dryers prevent COVID-19?","Does a dryer help preventing Corona virus?"],
+                "responses": ["Hand dryers are not effective in preventing COVID-19, and should be avoided when hands are not properly cleaned"],
+                "context_set": ""
+        },
+        {"tag": "water",
+                "patterns": ["Is public water safe?","Is it safe to drink water from fountains?"],
+                "responses": ["Public drinking water supplies are safe to drink (should avoid touching the spout and lever around though)"],
+                "context_set": ""
+        },
+        {"tag": "pets",
+                "patterns": [" Can pets be infected with COVID-19?","Do pets carry the virus?","Can domestic animals get infect"],
+                "responses": ["There is no reason to think that animals might be a source of infection with this new virus."],
                 "context_set": ""
         }
-
    ]
 }
